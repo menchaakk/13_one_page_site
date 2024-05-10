@@ -1,0 +1,275 @@
+html {
+  font-size: 62.5%;
+  background-color: #333334;
+  height: 100%;
+  font-family: sans-serif;
+}
+/*Header*/
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+h1 {
+  padding: 1rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+#myLinks {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+#myLinks a {
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+}
+nav {
+  width: 100%;
+  height: 40px;
+  top: 0;
+}
+
+ul {
+  justify-content: right;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+ul li {
+  padding: 1rem 3rem 1rem 3rem;
+  display: inline;
+}
+
+ul a {
+  color: white;
+  font-size: 1.5rem;
+}
+/*Main*/
+#main {
+  width: 100%;
+}
+/*banner*/
+#banner {
+  background-image: url(img/photo2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 3rem 3rem 0 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#floatBanner {
+  background-color: black;
+  opacity: 0.8;
+  color: #d2681e;
+  margin: 2rem;
+  height: 100%;
+}
+h2 {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+ol {
+  padding: 1rem 1rem 1rem 3rem;
+  list-style-type: decimal;
+  font-size: 1.5rem;
+}
+
+ol li::marker {
+  color: white;
+  font-style: normal;
+}
+
+ol li {
+  color: #e7bf8e;
+  font-style: italic;
+  padding: 0.5rem;
+}
+/*Menneisyys*/
+#menneisyys {
+  background-color: #f6f1f3;
+  margin: 0 3rem 0 3rem;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#cards {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.card img {
+  width: 150px;
+  height: auto;
+}
+h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 1rem;
+  font-weight: 300px;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+a {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+/*Nykyisyys*/
+#nykyisyys {
+  margin: 2rem 3rem 0 3rem;
+  border-top: 1px solid #8bc7e3;
+  border-bottom: 1px solid #8bc7e3;
+  padding-top: 2rem;
+}
+h5 {
+  color: #d2681e;
+  font-size: 3rem;
+}
+.nyky {
+  display: flex;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+#nykyisyys p {
+  color: white;
+  font-size: 1.3rem;
+}
+.nyky img {
+  width: 280px;
+  height: 150px;
+  margin: 1rem;
+}
+/*Tulevaisuus*/
+#tulevaisuus {
+  margin: 0rem 3rem 0 3rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #8bc7e3;
+}
+.tule {
+  display: flex;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+#tulevaisuus p {
+  color: white;
+  font-size: 1.3rem;
+}
+.tule img {
+  width: 280px;
+  height: 150px;
+  margin-right: 1rem;
+}
+/*yhtestiedot*/
+
+#yhtestiedot {
+  margin: 2rem 3rem 0 3rem;
+  border-bottom: 1px solid white;
+}
+
+#yhtestiedot h5 {
+  margin-bottom: 2rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.2rem;
+}
+.form-grup {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem 1rem 0;
+}
+.form-grup label {
+  padding: 1rem;
+}
+.form-grup input {
+  margin-left: auto;
+  width: 60%;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+}
+button {
+  background: #d2681e;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+}
+/* FOOTER */
+
+footer {
+  padding: 1rem 0 4rem 3rem;
+  font-size: 1.5rem;
+  color: white;
+}
+@media only screen and (max-width: 640px) {
+  #cards {
+    display: inline;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.2rem;
+  }
+  .menu {
+    display: none;
+  }
+  .icon {
+    color: white;
+  }
+  #myLinks a {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  #menneisyys,
+  #banner,
+  #tulevaisuus,
+  #yhtestiedot,
+  #nykyisyys {
+    margin: 0 1rem 0 1rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nyky,
+  .tule {
+    display: inline;
+  }
+}
